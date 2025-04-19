@@ -2,6 +2,10 @@
   "name": "slide-of-why-nextjs-on-findy-202505",
   "type": "module",
   "private": true,
+  "engines": {
+    "node": "22.14.0"
+  },
+  "packageManager": "pnpm@10.8.1",
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
