@@ -1,11 +1,10 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Slide of Why Next.js - Findy event 202505
 
-To start the slide show:
+## Slide
 
-- `pnpm install`
-- `pnpm dev`
-- visit <http://localhost:3030>
+- [slides.md](./slides.md)
+- [github pages](https://akifumisato.github.io/slide-of-why-nextjs-on-findy-202505/1)
 
-Edit the [slides.md](./slides.md) to see the changes.
+## Event
 
-Learn more about Slidev at the [documentation](https://sli.dev/).
+https://findy.connpass.com/event/349580/
