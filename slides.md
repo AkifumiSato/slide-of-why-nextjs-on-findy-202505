@@ -1,6 +1,6 @@
 ---
 theme: default
-background: https://images.unsplash.com/photo-1533001236066-0d375adf514e?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+background: https://images.unsplash.com/photo-1504966981333-1ac8809be1ca?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 class: text-center
 highlighter: shiki
 lineNumbers: false
@@ -12,9 +12,9 @@ title: Next.jsを選ぶ3つの問い
 mdc: true
 ---
 
-# Next.jsを選ぶ<br>3つの問い
+# Next.jsを選ぶ3つの問い
 
-重要な観点、重要でない観点
+論点と枝葉末節
 
 ---
 
@@ -48,7 +48,7 @@ mdc: true
   - 私見: 技術選定とは何なのか
   - Next.jsの立ち位置
   - Next.jsを選ぶ3つの問い
-  - Next.jsを選ぶ上で重要でない問い
+  - Next.jsを選ぶ上で重要でない問い（枝葉末節）
 - 前提
   - Reactの採用
 
