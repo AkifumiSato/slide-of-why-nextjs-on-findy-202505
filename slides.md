@@ -8,13 +8,13 @@ colorSchema: "dark"
 drawings:
   persist: false
 transition: slide-left
-title: Next.jsを選ぶ3つの問い
+title: Next.jsを選ぶ恩恵と制約
 mdc: true
 ---
 
-# Next.jsを選ぶ3つの問い
+# Next.jsを選ぶ恩恵と制約
 
-論点と枝葉末節
+「Next.jsを選ぶ」とはどういうことなのか
 
 ---
 
@@ -42,49 +42,64 @@ mdc: true
 
 # 今日のテーマ: 技術選定とNext.js
 
-ゴール: 「Next.jsを選ぶ」とはどういうことなのか、解像度を高めてほしい
+「Next.jsを選ぶ」とはどういうことなのか、解像度を高めてほしい
 
 - Agenda
-  - 私見: 技術選定とは何なのか
-  - Next.jsの立ち位置
-  - Next.jsを選ぶ3つの問い
-  - Next.jsを選ぶ上で重要でない問い（枝葉末節）
+  - 技術選定とは何なのか
+  - Next.jsを選ぶ恩恵
+  - Next.jsを選ぶ制約
+  - Next.jsを選ぶ上で枝葉末節な論点
 - 前提
   - Reactの採用
 
 ---
 
-# 私見: 技術選定とは何なのか
+# 技術選定とは何なのか
 
 技術選定に関する議論に対する私見
 
-- 技術選定はトレードオフを「選ぶ」こと
-- 複数の変数を鑑みて総合的に「選ぶ」必要がある
-  - メンバーのスキルセット
-  - プロダクト特性的相性
+技術選定とは<span class="font-bold" v-mark="{ at: 1, color: 'red', type: 'underline'}">選ぶこと</span>
+
+- 得られる**恩恵**が大きく、**制約**が許容できることが選定基準になる
+- 恩恵と制約は、様々な観点で洗い出す必要がある
+  - プロダクト特性
+  - 開発効率（短期、中長期）
+  - 開発規模
+  - スキルセット
   - 採用マーケティング、モチベーション
   - etc...
 
 ---
+
+# Next.jsを選ぶ恩恵
+
+個人的にNext.jsを選ぶ上で魅力だと思う点
+
+- 現在最も人気なフレームワーク
+- 破壊的変更に対する慎重な姿勢
+- デフォルトで高いパフォーマンス
+
+中長期的開発や大規模開発においては魅力的な要素が多い
+
+---
 transition: fade
 ---
 
-# Next.jsの立ち位置
+# 余談: Next.jsの人気
 
 現状Reactフレームワークの代表格
 
-- Next.jsは引き続き高い人気
-  - [State of React(Rendering Frameworks)](https://2024.stateofreact.com/en-US/libraries/back-end-infrastructure/)
-  - [State of JS(Rendering Frameworks)](https://2022.stateofjs.com/ja-JP/libraries/rendering-frameworks/)
-  - AIによる調査（Gemini、Grok）
-  - 会社やコミュニティでの話題性
-  - ~~[npm trends](https://npmtrends.com/@remix-run/react-vs-next-vs-react-router)~~: ダウンロードと人気は違う
+- [State of React(Rendering Frameworks)](https://2024.stateofreact.com/en-US/libraries/back-end-infrastructure/)
+- [State of JS(Rendering Frameworks)](https://2022.stateofjs.com/ja-JP/libraries/rendering-frameworks/)
+- AIによる調査（Gemini、Grok）
+- 会社やコミュニティでの話題性
+- ~~[npm trends](https://npmtrends.com/@remix-run/react-vs-next-vs-react-router)~~: ダウンロードと人気は違う
 
 ---
 transition: fade
 ---
 
-# Next.jsの立ち位置
+# 余談: Next.jsの人気
 
 現状Reactフレームワークの代表格
 
@@ -94,7 +109,7 @@ transition: fade
 
 ---
 
-# Next.jsの立ち位置
+# 余談: Next.jsの人気
 
 現状Reactフレームワークの代表格
 
@@ -104,23 +119,30 @@ transition: fade
 
 ---
 
-# Next.jsを選ぶ3つの問い
+# Next.jsを選ぶ制約
 
-個人的にNext.jsを選ぶ上で重要だと思う基準
+個人的にNext.jsを選ぶ上で重要だと思う点
 
-1. 「**Next.jsを使いたいか**」
-1. 「RSCを受け入れるか」
-1. 「インフラ制約を受け入れられるか」
+- RSCへの共感
+- インフラ制約
+- 実装品質への不安
+- 孤立したエコシステム
+
+他のフレームワークには他の制約があるので、許容できずとも<span class="font-bold" v-mark="{ at: 1, color: 'red', type: 'underline'}">選択肢があるとは限らない</span>
 
 ---
 
-# Next.jsを選ぶ上で重要でない問い
+# Next.jsを選ぶ上で枝葉末節な論点
 
-個人的にNext.jsを選ぶ上で**重要ではない**と思う基準
+個人的にNext.jsを選ぶ上で**重要ではない**と思う点
 
-- 「Next.jsに将来性を見出せるか」: 遠い未来の話はあまり意味がない
-- 「高いパフォーマンスが必要か」: パフォーマンスだけがNext.jsではない
-- 「DBアクセスを扱うかどうか」: Next.jsはBFF的側面が大きい
+- 将来的な人気
+  - 遠い未来の話は妄想にしかならないので考慮しても意味がない
+- 高いパフォーマンスの必要有無
+  - 「パフォーマンス不要、Next.js不要」は短絡的
+  - 「パフォーマンス不要」の大半は無知
+- DBアクセスの有無
+  - Next.jsはいわゆるフルスタックフレームワーク**ではない**
 
 ---
 
@@ -128,14 +150,15 @@ transition: fade
 
 Next.jsを選ぶかどうか迷った時に思い出してほしい
 
-- Next.jsを選ぶ問い
-  1. 「**Next.jsを使いたいか**」
-  1. 「RSCを受け入れるか」
-  1. 「インフラ制約を受け入れられるか」
-- 重要でない問い
-  - 「Next.jsに将来性を見出せるか」
-  - 「高いパフォーマンスが必要か」
-  - 「DBアクセスを扱うかどうか」
+- Next.jsを選ぶ恩恵
+  - 現在最も人気なフレームワーク
+  - 破壊的変更に対する慎重な姿勢
+  - デフォルトで高いパフォーマンス
+- Next.jsを選ぶ制約
+  - RSCへの共感
+  - インフラ制約
+  - 実装品質への不安
+  - 孤立したエコシステム
 
 ---
 layout: section
