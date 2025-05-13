@@ -44,30 +44,25 @@ mdc: true
 
 「Next.jsを選ぶ」とはどういうことなのか、解像度を高めてほしい
 
-- Agenda
-  - 技術選定とは何なのか
-  - Next.jsを選ぶ恩恵
-  - Next.jsを選ぶ制約
-  - Next.jsを選ぶ上で枝葉末節な論点
-- 前提
-  - Reactの採用
+- Next.jsを選ぶと何が嬉しいの？
+- Next.jsを選ぶと何が辛いの？
+- Next.jsを選ぶ上で何を考慮しなくていいの？
 
 ---
 
-# 技術選定とは何なのか
+# 技術選定の「恩恵」と「制約」
 
-技術選定に関する議論に対する私見
+技術選定は恩恵と制約を総合的に考慮し、選ぶことが重要
 
-技術選定とは<span class="font-bold" v-mark="{ at: 1, color: 'red', type: 'underline'}">選ぶこと</span>
+得られる**恩恵**が最も大きく、**制約**が許容できることが重要
 
-- 得られる**恩恵**が大きく、**制約**が許容できることが選定基準になる
-- 恩恵と制約は、様々な観点で洗い出す必要がある
-  - プロダクト特性
-  - 開発効率（短期、中長期）
-  - 開発規模
-  - スキルセット
-  - 採用マーケティング、モチベーション
-  - etc...
+- 開発効率（短期、中長期）
+- インフラ制約やシステム制約
+- 開発規模と戦略
+- 開発メンバーのスキルセット
+- 採用マーケティング、モチベーション
+- プロダクト特性との相性
+- etc...
 
 ---
 
@@ -75,47 +70,9 @@ mdc: true
 
 個人的にNext.jsを選ぶ上で魅力だと思う点
 
-- 現在最も人気なフレームワーク
-- 破壊的変更に対する慎重な姿勢
-- デフォルトで高いパフォーマンス
-
-中長期的開発や大規模開発においては魅力的な要素が多い
-
----
-transition: fade
----
-
-# 余談: Next.jsの人気
-
-現状Reactフレームワークの代表格
-
-- [State of React(Rendering Frameworks)](https://2024.stateofreact.com/en-US/libraries/back-end-infrastructure/)
-- [State of JS(Rendering Frameworks)](https://2022.stateofjs.com/ja-JP/libraries/rendering-frameworks/)
-- AIによる調査（Gemini、Grok）
-- 会社やコミュニティでの話題性
-- ~~[npm trends](https://npmtrends.com/@remix-run/react-vs-next-vs-react-router)~~: ダウンロードと人気は違う
-
----
-transition: fade
----
-
-# 余談: Next.jsの人気
-
-現状Reactフレームワークの代表格
-
-<div class="flex justify-center">
-  <img src="/state-of-js.png" class="h-100">
-</div>
-
----
-
-# 余談: Next.jsの人気
-
-現状Reactフレームワークの代表格
-
-<div class="flex justify-center">
-  <img src="/state-of-react.png" class="h-100">
-</div>
+- 現在最も人気なフレームワーク: **エコシステムや知見の充実**
+- 破壊的変更に対する慎重な姿勢: **中長期的安定性への期待**
+- デフォルトで高いパフォーマンス: **高いスケーリング特性**
 
 ---
 
@@ -128,11 +85,11 @@ transition: fade
 - 実装品質への不安
 - 孤立したエコシステム
 
-他のフレームワークには他の制約があるので、許容できずとも<span class="font-bold" v-mark="{ at: 1, color: 'red', type: 'underline'}">選択肢があるとは限らない</span>
+※他のフレームワークも<span class="font-bold" v-mark="{ at: 1, color: 'red', type: 'underline'}">これらの制約がないとは限らない</span>
 
 ---
 
-# Next.jsを選ぶ上で枝葉末節な論点
+# 枝葉末節な論点
 
 個人的にNext.jsを選ぶ上で**重要ではない**と思う点
 
@@ -165,3 +122,39 @@ layout: section
 ---
 
 # End
+
+---
+transition: fade
+---
+
+# 付録: Next.jsの人気
+
+現状Reactフレームワークの代表格
+
+- [State of React(Rendering Frameworks)](https://2024.stateofreact.com/en-US/libraries/back-end-infrastructure/)
+- [State of JS(Rendering Frameworks)](https://2022.stateofjs.com/ja-JP/libraries/rendering-frameworks/)
+- AIによる調査（Gemini、Grok）
+- 会社やコミュニティでの話題性
+- ~~[npm trends](https://npmtrends.com/@remix-run/react-vs-next-vs-react-router)~~: ダウンロードと人気は違う
+
+---
+transition: fade
+---
+
+# 付録: Next.jsの人気
+
+現状Reactフレームワークの代表格
+
+<div class="flex justify-center">
+  <img src="/state-of-js.png" class="h-100">
+</div>
+
+---
+
+# 付録: Next.jsの人気
+
+現状Reactフレームワークの代表格
+
+<div class="flex justify-center">
+  <img src="/state-of-react.png" class="h-100">
+</div>
